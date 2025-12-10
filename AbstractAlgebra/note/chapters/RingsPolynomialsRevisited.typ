@@ -512,4 +512,27 @@ where $m_a ∈ bb(Z)_(≥0)$, $h ∈ F[X]$, and $h(a) ≠ 0$ (equivalently, $h$ 
   Let $f ∈ F[X]$ satisfy $n := deg f ≥ 1$. Then the extension field $E_f$  can be suitably chosen such that $[E_f : F] ≤ n!$.
 ]
 
+== Application: Constructing Finite Fields
+
+#proposition[
+  Let $p$ be a prime and $F$ be a finite field of characteristic $p$. Then $|F| = p^n$, where $n := [F : bb(F)_p]$.
+]
+
+#definition[
+  *(Frobenius Endomorphism)* Let $p$ be a prime, $R$ be a commutative ring satisfying $p · 1_R = 0_R$.
+  For all $q = p^n$, where $n ∈ bb(Z)_(≥1)$, the mapping
+  $
+    "Fr"_q : R & → R \
+            x & ↦ x^q
+  $
+  is an endomorphism of the ring $R$, called the *Frobenius endomorphism*.
+]
+
+#lemma[
+  Let $φ : R → R$ be an endomorphism of the ring $R$. Then the fixed point set ${x ∈ R : φ(x) = x}$ is a subring of $R$. If $R$ is a field, then the fixed point set is also a subfield.
+]
+
+#proposition[
+  Let $p$ be a prime and $n ∈ bb(Z)_(≥1)$. Then there exists a finite field with exactly $q := p^n$ elements.
+]
 
